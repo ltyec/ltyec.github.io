@@ -8,11 +8,11 @@
         <language>zh-cn</language>
         <lastBuildDate>Sat, 02 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ltyec.com/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Hello World</title>
-        <link>https://ltyec.com/post/test-chinese/</link>
+        <link>https://ltyec.com/post/test/</link>
         <pubDate>Sat, 02 Apr 2022 00:00:00 +0000</pubDate>
         
-        <guid>https://ltyec.com/post/test-chinese/</guid>
-        <description>&lt;img src="https://ltyec.com/post/test-chinese/take.png" alt="Featured image of post Hello World" /&gt;&lt;h2 id=&#34;maimai发病实录&#34;&gt;maimai发病实录&lt;/h2&gt;
+        <guid>https://ltyec.com/post/test/</guid>
+        <description>&lt;img src="https://ltyec.com/post/test/take.png" alt="Featured image of post Hello World" /&gt;&lt;h2 id=&#34;maimai发病实录&#34;&gt;maimai发病实录&lt;/h2&gt;
 &lt;p&gt;呜呜呜呜呜呜滴蜡熊呜呜呜，我已经28天没见到你了呜呜呜呜呜，疫情什么时候结束让我出勤啊呜呜呜呜呜呜呜呜呜&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;这是多么苦的一位玩家啊&lt;/p&gt;
@@ -21,31 +21,13 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
         </item>
         <item>
-        <title>Archives</title>
-        <link>https://ltyec.com/page/archives/</link>
-        <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
-        
-        <guid>https://ltyec.com/page/archives/</guid>
-        <description></description>
-        </item>
-        <item>
         <title>Links</title>
-        <link>https://ltyec.com/page/%E5%8F%8B%E9%93%BE/</link>
+        <link>https://ltyec.com/page/links/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://ltyec.com/page/%E5%8F%8B%E9%93%BE/</guid>
-        <description>&lt;p&gt;To use this feature, add &lt;code&gt;links&lt;/code&gt; section to frontmatter.&lt;/p&gt;
-&lt;p&gt;This page&amp;rsquo;s frontmatter:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;links&lt;/span&gt;:
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  - &lt;span style=&#34;color:#f92672&#34;&gt;title&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;GitHub&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;description&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;GitHub is the world&amp;#39;s largest software development platform.&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;website&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;https://github.com&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;image&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  - &lt;span style=&#34;color:#f92672&#34;&gt;title&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;TypeScript&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;description&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;website&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;https://www.typescriptlang.org&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;image&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;ts-logo-128.jpg&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;code&gt;image&lt;/code&gt; field accepts both local and external images.&lt;/p&gt;
+        <guid>https://ltyec.com/page/links/</guid>
+        <description>&lt;p&gt;如要交换友链，请联系邮箱&lt;code&gt;yyc@yycdeweb.xyz&lt;/code&gt;或者联系我的&lt;a class=&#34;link&#34; href=&#34;https://t.me/pepper_chan&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;telegram&lt;/a&gt;&lt;/p&gt;
 </description>
         </item>
         <item>
@@ -58,12 +40,26 @@
         </item>
         <item>
         <title>关于</title>
-        <link>https://ltyec.com/page/%E5%85%B3%E4%BA%8E/</link>
+        <link>https://ltyec.com/page/about/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://ltyec.com/page/%E5%85%B3%E4%BA%8E/</guid>
-        <description>&lt;p&gt;This is a test page for i18n support.&lt;/p&gt;
+        <guid>https://ltyec.com/page/about/</guid>
+        <description>&lt;p&gt;#hi，这里是ltyec
+MtF，15岁，生日3/3
+日常音游玩家，主攻maimai，pjsk 其他的譬如arcaea，phigros，sdvx，osu也打，但是刚入坑还是不会啦x
+平时偶尔搓搓代码，比如python，php，html/css等等但是离不开抄抄抄
+*做梦都想玩各种街机音游
+好啦就说到这里了，如果想找我聊天或者一起玩的话就来我的&lt;a class=&#34;link&#34; href=&#34;https://t.me/pepper_chan&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;telegram&lt;/a&gt;找我就好啦，我一般半夜会在tg晃悠哦x&lt;/p&gt;
 </description>
+        </item>
+        <item>
+        <title>文章</title>
+        <link>https://ltyec.com/page/%E6%96%87%E7%AB%A0/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://ltyec.com/page/%E6%96%87%E7%AB%A0/</guid>
+        <description></description>
         </item>
         
     </channel>
