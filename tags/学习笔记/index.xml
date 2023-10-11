@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>学习笔记 on 天子，在这里</title>
-        <link>https://ltyec.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
+        <link>https://ltyec.com/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
         <description>Recent content in 学习笔记 on 天子，在这里</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Wed, 11 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ltyec.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 11 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ltyec.com/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Kotlin学习笔记-1</title>
-        <link>https://ltyec.github.io/post/kotlin-1/</link>
+        <link>https://ltyec.com/post/kotlin-1/</link>
         <pubDate>Wed, 11 Oct 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://ltyec.github.io/post/kotlin-1/</guid>
-        <description>&lt;img src="https://ltyec.github.io/post/kotlin-1/take.png" alt="Featured image of post Kotlin学习笔记-1" /&gt;&lt;h2 id=&#34;入门知识&#34;&gt;入门知识&lt;/h2&gt;
+        <guid>https://ltyec.com/post/kotlin-1/</guid>
+        <description>&lt;img src="https://ltyec.com/post/kotlin-1/take.png" alt="Featured image of post Kotlin学习笔记-1" /&gt;&lt;h2 id=&#34;入门知识&#34;&gt;入门知识&lt;/h2&gt;
 &lt;p&gt;在kotlin中，存在包的概念，一个项目可以有很多包，他们是可以独立运作的
 在IDEA中，如果创建了包，则会在kt文件顶部直接声明&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;//该文件隶属于包tenshi.first.demo
