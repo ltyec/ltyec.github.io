@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>个人相关 on 天子，在这里</title>
-        <link>https://ltyec.com/categories/%E4%B8%AA%E4%BA%BA%E7%9B%B8%E5%85%B3/</link>
+        <link>https://ltyec.github.io/categories/%E4%B8%AA%E4%BA%BA%E7%9B%B8%E5%85%B3/</link>
         <description>Recent content in 个人相关 on 天子，在这里</description>
         <generator>Hugo -- gohugo.io</generator>
-        <language>zh-cn</language><atom:link href="https://ltyec.com/categories/%E4%B8%AA%E4%BA%BA%E7%9B%B8%E5%85%B3/index.xml" rel="self" type="application/rss+xml" />
+        <language>zh-cn</language><atom:link href="https://ltyec.github.io/categories/%E4%B8%AA%E4%BA%BA%E7%9B%B8%E5%85%B3/index.xml" rel="self" type="application/rss+xml" />
     </channel>
 </rss>
