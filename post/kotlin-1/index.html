@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='如要交换友链，请联系我的telegram'><title>Links</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='kotlin入门以及变量部分的概略'><title>Kotlin学习笔记-1</title>
 
-<link rel='canonical' href='https://ltyec.com/page/links/'>
+<link rel='canonical' href='https://ltyec.com/post/kotlin-1/'>
 
-<link rel="stylesheet" href="/scss/style.min.d9e0562edde3d2bdf9d3d81365095a29d062ddaaa5d671f22168e57dfdb18b4f.css"><meta property='og:title' content='Links'>
-<meta property='og:description' content='如要交换友链，请联系我的telegram'>
-<meta property='og:url' content='https://ltyec.com/page/links/'>
+<link rel="stylesheet" href="/scss/style.min.d9e0562edde3d2bdf9d3d81365095a29d062ddaaa5d671f22168e57dfdb18b4f.css"><meta property='og:title' content='Kotlin学习笔记-1'>
+<meta property='og:description' content='kotlin入门以及变量部分的概略'>
+<meta property='og:url' content='https://ltyec.com/post/kotlin-1/'>
 <meta property='og:site_name' content='天子，在这里'>
-<meta property='og:type' content='article'><meta property='article:section' content='Page' />
-<meta name="twitter:title" content="Links">
-<meta name="twitter:description" content="如要交换友链，请联系我的telegram">
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='有营养' /><meta property='article:tag' content='kotlin' /><meta property='article:tag' content='学习笔记' /><meta property='article:published_time' content='2023-10-11T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2023-10-11T00:00:00&#43;00:00'/><meta property='og:image' content='https://ltyec.com/post/kotlin-1/take.png' />
+<meta name="twitter:title" content="Kotlin学习笔记-1">
+<meta name="twitter:description" content="kotlin入门以及变量部分的概略"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://ltyec.com/post/kotlin-1/take.png' />
     <link rel="shortcut icon" href="#ZgotmplZ" />
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7217934110714163"
      crossorigin="anonymous"></script>
@@ -201,7 +202,7 @@
         
         
 
-        <li  class='current' >
+        <li >
             <a href='/page/links/' >
                 
                 
@@ -247,22 +248,59 @@
     </ol>
 </aside>
 <main class="main full-width">
-    <article class="main-article">
+    <article class="has-image main-article">
     <header class="article-header">
+        <div class="article-image">
+            <a href="/post/kotlin-1/">
+                <img src="/post/kotlin-1/take_hu65c73d4917ebe70c6646dd2cb143f70c_50501_800x0_resize_box_3.png"
+                        srcset="/post/kotlin-1/take_hu65c73d4917ebe70c6646dd2cb143f70c_50501_800x0_resize_box_3.png 800w, /post/kotlin-1/take_hu65c73d4917ebe70c6646dd2cb143f70c_50501_1600x0_resize_box_3.png 1600w"
+                        width="800" 
+                        height="695" 
+                        loading="lazy"
+                        alt="Featured image of post Kotlin学习笔记-1" />
+                
+            </a>
+        </div>
+    
 
     <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E6%8A%80%E6%9C%AF%E7%9B%B8%E5%85%B3/" >
+                技术相关
+            </a>
+        
+    </header>
     
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/page/links/">Links</a>
+            <a href="/post/kotlin-1/">Kotlin学习笔记-1</a>
         </h2>
     
+        
+        <h3 class="article-subtitle">
+            kotlin入门以及变量部分的概略
+        </h3>
         
     </div>
 
     
     <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Oct 11, 2023</time>
+            </div>
         
 
         
@@ -290,14 +328,88 @@
     <section class="article-content">
     
     
-    <p>如要交换友链，请联系我的<a class="link" href="https://t.me/Strelexia"  target="_blank" rel="noopener"
-    >telegram</a></p>
+    <h2 id="入门知识">入门知识</h2>
+<p>在kotlin中，存在包的概念，一个项目可以有很多包，他们是可以独立运作的
+在IDEA中，如果创建了包，则会在kt文件顶部直接声明</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>//该文件隶属于包tenshi.first.demo
+</span></span><span style="display:flex;"><span>package tenshi.first.demo
+</span></span></code></pre></div><p>只要在同一个包中，kt文件就几乎不受目录结构影响</p>
+<p>导入属于十分常见的方法，在文件顶部声明</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>//导入tenshi.security中的所有类
+</span></span><span style="display:flex;"><span>import tenshi.security.*
+</span></span></code></pre></div><p>kt程序的入口是main函数</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>fun main(){
+</span></span><span style="display:flex;"><span>    print(&#34;Hello &#34;)
+</span></span><span style="display:flex;"><span>    print(&#34;World!&#34;)
+</span></span><span style="display:flex;"><span>    println(&#34;Hello World!&#34;)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>输出结果为下：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Hello World!
+</span></span><span style="display:flex;"><span>Hello World!
+</span></span></code></pre></div><p>这是因为，print函数不会换行
+而println（print\n）函数则是将自己作为独立的一行输出</p>
+<p>kotlin中的注释分为行注释与块注释，具体写法如下：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>//我是行注释
+</span></span><span style="display:flex;"><span>/* 我是块
+</span></span><span style="display:flex;"><span>    注释 */
+</span></span></code></pre></div><p>块注释支持嵌套</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>/* 我是块注释开头
+</span></span><span style="display:flex;"><span>/* 我属于块注释的嵌套 */
+</span></span><span style="display:flex;"><span>块注释的尾巴在这里！ */
+</span></span></code></pre></div><blockquote>
+<p>具体更多的函数实现将会在以后的笔记中呈现，现在暂时略过</p>
+</blockquote>
+<h2 id="数据类型">数据类型</h2>
+<p>Kotlin有以下常见的数据类型：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>String 字符串
+</span></span><span style="display:flex;"><span>Char 单字符
+</span></span><span style="display:flex;"><span>Boolean 布尔值（t/f）
+</span></span><span style="display:flex;"><span>Int 整数
+</span></span><span style="display:flex;"><span>Double 双精度小数
+</span></span><span style="display:flex;"><span>Float 单精度小数
+</span></span><span style="display:flex;"><span>List 集合
+</span></span><span style="display:flex;"><span>Set 无重复的集合
+</span></span><span style="display:flex;"><span>Map 键值对集合
+</span></span><span style="display:flex;"><span>Unit 无输出函数，类似于java的void
+</span></span><span style="display:flex;"><span>Nothing 异常类型
+</span></span><span style="display:flex;"><span>......
+</span></span></code></pre></div><p>看似以上全是引用类型，但当其编译再转入jvm时，就会变成基本类型使用</p>
+<h2 id="var与val">var与val</h2>
+<p>var定义的是可变变量 而val定义的是只读变量
+请看代码：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>//将&#34;v1&#34;这个字符串赋值给变量v1
+</span></span><span style="display:flex;"><span>var v1: String = &#34;v1&#34;
+</span></span><span style="display:flex;"><span>//将&#34;v2&#34;这个字符串赋值给只读变量v2
+</span></span><span style="display:flex;"><span>val v2: String = &#34;v2&#34;
+</span></span></code></pre></div><p>由于Kotlin自带类型推断，于是我们可以将其写为这个格式：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>//将&#34;v1&#34;赋值给变量v1，编译器自动将v1推断为String
+</span></span><span style="display:flex;"><span>var v1 = &#34;v1&#34;
+</span></span><span style="display:flex;"><span>//将&#34;v2&#34;赋值给只读变量v2，编译器自动将v2推断为String
+</span></span><span style="display:flex;"><span>val v2 = &#34;v2&#34;
+</span></span></code></pre></div><blockquote>
+<p>只读变量与编译时参数不同，只读变量如果属于List类型，其中的元素依然可以更改，但元素的数量以及类型均为只读
+定义编译时参数的实现如下</p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>const val v1: String = &#34;v1&#34;
+</span></span><span style="display:flex;"><span>//当然，这同样支持类型推断
+</span></span><span style="display:flex;"><span>const val v1 = &#34;v1&#34;
+</span></span></code></pre></div><p>编译时常量的定义实现不能写在函数内，不适用于局部变量</p>
 
 </section>
 
 
     <footer class="article-footer">
     
+    <section class="article-tags">
+        
+            <a href="/tags/%E6%9C%89%E8%90%A5%E5%85%BB/">有营养</a>
+        
+            <a href="/tags/kotlin/">kotlin</a>
+        
+            <a href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a>
+        
+    </section>
+
 
     
     <section class="article-copyright">
@@ -318,71 +430,12 @@
 </article>
 
     
-        <div class="article-list--compact links">
-    
-        <article>
-            <a href="https://sukazyo.cc/" target="_blank" rel="noopener">
-                <div class="article-details">
-                    <h2 class="article-title">Sukazyo Workshop</h2>
-                    <footer class="article-time">
-                        
-                            嘛不过现在似乎在翻新
-                        
-                    </footer>
-                </div>
-        
-                
-                    <div class="article-image">
-                        <img src="sukws.jpg" loading="lazy">
-                    </div>
-                
-            </a>
-        </article>
-    
-        <article>
-            <a href="https://www.winsloweric.cn/" target="_blank" rel="noopener">
-                <div class="article-details">
-                    <h2 class="article-title">Winslow Eric博客</h2>
-                    <footer class="article-time">
-                        
-                            winslow的主站
-                        
-                    </footer>
-                </div>
-        
-                
-                    <div class="article-image">
-                        <img src="winslow.jpg" loading="lazy">
-                    </div>
-                
-            </a>
-        </article>
-    
-        <article>
-            <a href="https://www.yimingzhanshen.com/" target="_blank" rel="noopener">
-                <div class="article-details">
-                    <h2 class="article-title">佚名战神の破站</h2>
-                    <footer class="article-time">
-                        
-                            ymzs的起始页
-                        
-                    </footer>
-                </div>
-        
-                
-                    <div class="article-image">
-                        <img src="https://q1.qlogo.cn/g?b=qq&amp;nk=2752290027&amp;s=640" loading="lazy">
-                    </div>
-                
-            </a>
-        </article>
-    
-</div>
-    
 
     
 
      
+    
+        
     
 
     <footer class="site-footer">
