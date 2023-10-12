@@ -323,71 +323,71 @@
 <h3 id="kt包">kt包</h3>
 <p>在kotlin中，存在包的概念，一个项目可以有很多包，他们是可以独立运作的</p>
 <p>在IDEA中，如果创建了包，则会在kt文件顶部直接声明</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>// 该文件隶属于包tenshi.first.demo
-</span></span><span style="display:flex;"><span>package tenshi.first.demo
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#75715e">// 该文件隶属于包tenshi.first.demo
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">package</span> tenshi.first.demo
 </span></span></code></pre></div><p>只要在同一个包中，kt文件就几乎不受目录结构影响</p>
 <h3 id="导入类">导入类</h3>
 <p>导入属于十分常见的方法，在文件顶部声明</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>// 导入tenshi.security中的所有类
-</span></span><span style="display:flex;"><span>import tenshi.security.*
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#75715e">// 导入tenshi.security中的所有类
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">import</span> tenshi.security.*
 </span></span></code></pre></div><h3 id="main-函数">main() 函数</h3>
 <p>kt程序的入口是main函数</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>fun main(){
-</span></span><span style="display:flex;"><span>    print(&#34;Hello &#34;)
-</span></span><span style="display:flex;"><span>    print(&#34;World!&#34;)
-</span></span><span style="display:flex;"><span>    println(&#34;Hello World!&#34;)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">main</span>(){
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Hello &#34;</span>)
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;World!&#34;</span>)
+</span></span><span style="display:flex;"><span>    println(<span style="color:#e6db74">&#34;Hello World!&#34;</span>)
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>输出结果为下：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Hello World!
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span>Hello World!
 </span></span><span style="display:flex;"><span>Hello World!
 </span></span></code></pre></div><p>这是因为，print函数不会换行</p>
 <p>而println（print\n）函数则是将自己作为独立的一行输出</p>
 <h3 id="注释">注释</h3>
 <p>kotlin中的注释分为行注释与块注释，具体写法如下：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>// 我是行注释
-</span></span><span style="display:flex;"><span>/* 我是块
-</span></span><span style="display:flex;"><span>    注释 */
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#75715e">// 我是行注释
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#75715e">/* 我是块
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">    注释 */</span>
 </span></span></code></pre></div><p>块注释支持嵌套</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>/* 我是块注释开头
-</span></span><span style="display:flex;"><span>/* 我属于块注释的嵌套 */
-</span></span><span style="display:flex;"><span>块注释的尾巴在这里！ */
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#75715e">/* 我是块注释开头
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">/* 我属于块注释的嵌套 */</span>
+</span></span><span style="display:flex;"><span>块注释的尾巴在这里<span style="color:#960050;background-color:#1e0010">！</span> */
 </span></span></code></pre></div><blockquote>
 <p>具体更多的函数实现将会在以后的笔记中呈现，现在暂时略过</p>
 </blockquote>
 <h2 id="数据类型">数据类型</h2>
 <p>Kotlin有以下常见的数据类型：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>String 字符串
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span>String 字符串
 </span></span><span style="display:flex;"><span>Char 单字符
-</span></span><span style="display:flex;"><span>Boolean 布尔值（t/f）
+</span></span><span style="display:flex;"><span>Boolean 布尔值<span style="color:#960050;background-color:#1e0010">（</span>t/f<span style="color:#960050;background-color:#1e0010">）</span>
 </span></span><span style="display:flex;"><span>Int 整数
 </span></span><span style="display:flex;"><span>Double 双精度小数
 </span></span><span style="display:flex;"><span>Float 单精度小数
 </span></span><span style="display:flex;"><span>List 集合
 </span></span><span style="display:flex;"><span>Set 无重复的集合
 </span></span><span style="display:flex;"><span>Map 键值对集合
-</span></span><span style="display:flex;"><span>Unit 无输出函数对象，类似于java的void
-</span></span><span style="display:flex;"><span>Nothing 多用于抛异常，永不输出的函数对象
-</span></span><span style="display:flex;"><span>......
+</span></span><span style="display:flex;"><span>Unit 无输出函数对象<span style="color:#960050;background-color:#1e0010">，</span>类似于java的void
+</span></span><span style="display:flex;"><span>Nothing 多用于抛异常<span style="color:#960050;background-color:#1e0010">，</span>永不输出的函数对象
+</span></span><span style="display:flex;"><span><span style="color:#f92672">......</span>
 </span></span></code></pre></div><p>看似以上全是引用类型，但当其编译再转入jvm时，就会变成基本类型使用</p>
 <h2 id="var与val">var与val</h2>
 <p>var定义的是可变变量 而val定义的是只读变量</p>
 <p>请看代码：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>// 将&#34;v1&#34;这个字符串赋值给变量v1
-</span></span><span style="display:flex;"><span>var v1: String = &#34;v1&#34;
-</span></span><span style="display:flex;"><span>// 将&#34;v2&#34;这个字符串赋值给只读变量v2
-</span></span><span style="display:flex;"><span>val v2: String = &#34;v2&#34;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#75715e">// 将&#34;v1&#34;这个字符串赋值给变量v1
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> v1: String = <span style="color:#e6db74">&#34;v1&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 将&#34;v2&#34;这个字符串赋值给只读变量v2
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">val</span> v2: String = <span style="color:#e6db74">&#34;v2&#34;</span>
 </span></span></code></pre></div><p>由于Kotlin自带类型推断，于是我们可以将其写为这个格式：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>// 将&#34;v1&#34;赋值给变量v1，编译器自动将v1推断为String
-</span></span><span style="display:flex;"><span>var v1 = &#34;v1&#34;
-</span></span><span style="display:flex;"><span>// 将&#34;v2&#34;赋值给只读变量v2，编译器自动将v2推断为String
-</span></span><span style="display:flex;"><span>val v2 = &#34;v2&#34;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#75715e">// 将&#34;v1&#34;赋值给变量v1，编译器自动将v1推断为String
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> v1 = <span style="color:#e6db74">&#34;v1&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 将&#34;v2&#34;赋值给只读变量v2，编译器自动将v2推断为String
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">val</span> v2 = <span style="color:#e6db74">&#34;v2&#34;</span>
 </span></span></code></pre></div><blockquote>
 <p>只读变量与编译时参数不同，只读变量如果属于List类型，其中的元素依然可以更改，但元素的数量以及类型均为只读</p>
 </blockquote>
 <p>定义编译时参数的实现如下</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>const val v1: String = &#34;v1&#34;
-</span></span><span style="display:flex;"><span>// 当然，这同样支持类型推断
-</span></span><span style="display:flex;"><span>const val v1 = &#34;v1&#34;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#66d9ef">val</span> v1: String = <span style="color:#e6db74">&#34;v1&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 当然，这同样支持类型推断
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#66d9ef">val</span> v1 = <span style="color:#e6db74">&#34;v1&#34;</span>
 </span></span></code></pre></div><p>编译时常量的定义实现不能写在函数内，不适用于局部变量</p>
 
 </section>
