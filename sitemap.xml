@@ -3,33 +3,36 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://ltyec.com/</loc>
-    <lastmod>2023-10-11T00:00:00+00:00</lastmod>
+    <lastmod>2023-10-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://ltyec.com/categories/</loc>
-    <lastmod>2023-10-11T00:00:00+00:00</lastmod>
+    <lastmod>2023-10-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://ltyec.com/tags/kotlin/</loc>
-    <lastmod>2023-10-11T00:00:00+00:00</lastmod>
+    <lastmod>2023-10-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ltyec.com/post/kotlin-3/</loc>
+    <lastmod>2023-10-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ltyec.com/post/</loc>
+    <lastmod>2023-10-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ltyec.com/tags/</loc>
+    <lastmod>2023-10-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ltyec.com/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
+    <lastmod>2023-10-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ltyec.com/categories/%E6%8A%80%E6%9C%AF%E7%9B%B8%E5%85%B3/</loc>
+    <lastmod>2023-10-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ltyec.com/tags/%E6%9C%89%E8%90%A5%E5%85%BB/</loc>
+    <lastmod>2023-10-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://ltyec.com/post/kotlin-1/</loc>
     <lastmod>2023-10-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://ltyec.com/post/kotlin-2/</loc>
-    <lastmod>2023-10-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://ltyec.com/post/</loc>
-    <lastmod>2023-10-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://ltyec.com/tags/</loc>
-    <lastmod>2023-10-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://ltyec.com/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2023-10-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://ltyec.com/categories/%E6%8A%80%E6%9C%AF%E7%9B%B8%E5%85%B3/</loc>
-    <lastmod>2023-10-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://ltyec.com/tags/%E6%9C%89%E8%90%A5%E5%85%BB/</loc>
     <lastmod>2023-10-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://ltyec.com/tags/html/</loc>
@@ -52,7 +55,7 @@
   </url><url>
     <loc>https://ltyec.com/page/%E6%90%9C%E7%B4%A2/</loc>
   </url><url>
-    <loc>https://ltyec.com/page/%E6%96%87%E7%AB%A0/</loc>
+    <loc>https://ltyec.com/page/archives/</loc>
   </url><url>
     <loc>https://ltyec.com/tags/%E6%97%A0%E8%90%A5%E5%85%BB/</loc>
   </url><url>
