@@ -321,12 +321,12 @@
 <h3 id="kt包">kt包</h3>
 <p>在kotlin中，存在包的概念，一个项目可以有很多包，他们是可以独立运作的</p>
 <p>在IDEA中，如果创建了包，则会在kt文件顶部直接声明</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>//该文件隶属于包tenshi.first.demo
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>// 该文件隶属于包tenshi.first.demo
 </span></span><span style="display:flex;"><span>package tenshi.first.demo
 </span></span></code></pre></div><p>只要在同一个包中，kt文件就几乎不受目录结构影响</p>
 <h3 id="导入类">导入类</h3>
 <p>导入属于十分常见的方法，在文件顶部声明</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>//导入tenshi.security中的所有类
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>// 导入tenshi.security中的所有类
 </span></span><span style="display:flex;"><span>import tenshi.security.*
 </span></span></code></pre></div><h3 id="main-函数">main() 函数</h3>
 <p>kt程序的入口是main函数</p>
@@ -342,7 +342,7 @@
 <p>而println（print\n）函数则是将自己作为独立的一行输出</p>
 <h3 id="注释">注释</h3>
 <p>kotlin中的注释分为行注释与块注释，具体写法如下：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>//我是行注释
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>// 我是行注释
 </span></span><span style="display:flex;"><span>/* 我是块
 </span></span><span style="display:flex;"><span>    注释 */
 </span></span></code></pre></div><p>块注释支持嵌套</p>
@@ -370,21 +370,21 @@
 <h2 id="var与val">var与val</h2>
 <p>var定义的是可变变量 而val定义的是只读变量</p>
 <p>请看代码：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>//将&#34;v1&#34;这个字符串赋值给变量v1
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>// 将&#34;v1&#34;这个字符串赋值给变量v1
 </span></span><span style="display:flex;"><span>var v1: String = &#34;v1&#34;
-</span></span><span style="display:flex;"><span>//将&#34;v2&#34;这个字符串赋值给只读变量v2
+</span></span><span style="display:flex;"><span>// 将&#34;v2&#34;这个字符串赋值给只读变量v2
 </span></span><span style="display:flex;"><span>val v2: String = &#34;v2&#34;
 </span></span></code></pre></div><p>由于Kotlin自带类型推断，于是我们可以将其写为这个格式：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>//将&#34;v1&#34;赋值给变量v1，编译器自动将v1推断为String
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>// 将&#34;v1&#34;赋值给变量v1，编译器自动将v1推断为String
 </span></span><span style="display:flex;"><span>var v1 = &#34;v1&#34;
-</span></span><span style="display:flex;"><span>//将&#34;v2&#34;赋值给只读变量v2，编译器自动将v2推断为String
+</span></span><span style="display:flex;"><span>// 将&#34;v2&#34;赋值给只读变量v2，编译器自动将v2推断为String
 </span></span><span style="display:flex;"><span>val v2 = &#34;v2&#34;
 </span></span></code></pre></div><blockquote>
 <p>只读变量与编译时参数不同，只读变量如果属于List类型，其中的元素依然可以更改，但元素的数量以及类型均为只读</p>
 </blockquote>
 <p>定义编译时参数的实现如下</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>const val v1: String = &#34;v1&#34;
-</span></span><span style="display:flex;"><span>//当然，这同样支持类型推断
+</span></span><span style="display:flex;"><span>// 当然，这同样支持类型推断
 </span></span><span style="display:flex;"><span>const val v1 = &#34;v1&#34;
 </span></span></code></pre></div><p>编译时常量的定义实现不能写在函数内，不适用于局部变量</p>
 
