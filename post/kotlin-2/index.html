@@ -323,7 +323,7 @@
 <p>kotlin一般定义函数的方法如下</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#75715e">/*定义一个公有函数为f1，第一个传入数据定义为v1，
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e">v1是String类型，函数返回字符串所以填写String类型*/</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">f1</span>(v1: String)<span style="color:#960050;background-color:#1e0010">：</span>String{
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">f1</span>(v1: String): String{
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">// 返回v1加字符串&#34; World!&#34;
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">$v1</span><span style="color:#e6db74"> World!&#34;</span>
 </span></span><span style="display:flex;"><span>}
@@ -333,7 +333,7 @@
 <p>那没有返回的函数呢？如何填写类型？</p>
 <p>这就引出了Kotlin的特殊类型<code>Unit</code>，它可以在没有输出的情况下依然使函数返回一个对象</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#75715e">// 将返回类型换成Unit，可以省略&#34;: Unit&#34;不写，编译器看得懂
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">f1</span>(v1: String)<span style="color:#960050;background-color:#1e0010">：</span>Unit{
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">f1</span>(v1: String): Unit{
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">// 打印v1加字符串&#34; World!&#34;
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    println(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">$v1</span><span style="color:#e6db74"> World!&#34;</span>)
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">// 返回Unit，这句话也可以省略不写，编译器也看得懂
@@ -344,7 +344,7 @@
 </blockquote>
 <p>同样，我们也可以定义私有函数：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#75715e">// 定义一个私有函数为f2，传入字符串定义为v2，函数返回String类型
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">private</span> <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">f1</span>(v1: String)<span style="color:#960050;background-color:#1e0010">：</span>String{
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">private</span> <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">f1</span>(v1: String): String{
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">// 返回v1加字符串&#34; World!&#34;
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">$v1</span><span style="color:#e6db74"> World!&#34;</span>
 </span></span><span style="display:flex;"><span>}
