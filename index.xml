@@ -12,7 +12,7 @@
         <pubDate>Thu, 12 Oct 2023 00:00:00 +0000</pubDate>
         
         <guid>https://ltyec.com/post/kotlin-3/</guid>
-        <description>&lt;img src="https://ltyec.com/rasp.png" alt="Featured image of post Kotlin学习笔记-3" /&gt;&lt;h2 id=&#34;range&#34;&gt;Range&lt;/h2&gt;
+        <description>&lt;img src="https://ltyec.com/post/kotlin-3/rasp.jpg" alt="Featured image of post Kotlin学习笔记-3" /&gt;&lt;h2 id=&#34;range&#34;&gt;Range&lt;/h2&gt;
 &lt;p&gt;如果想要指定一个集合，其中包含1一直到10的自然数，只需要使用&lt;code&gt;..&lt;/code&gt;：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;//包含1和10
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;val onetoten = 1..10
