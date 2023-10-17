@@ -335,29 +335,29 @@
 </span></span><span style="display:flex;"><span>root@tenshiserver:~# apt -y install postgresql
 </span></span></code></pre></div><h2 id="用户配置">用户配置</h2>
 <p>名为&quot;postgres&quot;的数据库以及系统用户会自动创建</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># 给postgres设置密码</span>
-</span></span><span style="display:flex;"><span>root@tenshiserver:~# passwd postgres
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">#</span> 给postgres设置密码
+</span></span><span style="display:flex;"><span>root<span style="color:#a6e22e">@tenshiserver</span>:~<span style="color:#960050;background-color:#1e0010">#</span> passwd postgres
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 进入postgres系统用户</span>
-</span></span><span style="display:flex;"><span>root@tenshiserver:~# sudo -i -u postgres
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">#</span> 进入postgres系统用户
+</span></span><span style="display:flex;"><span>root<span style="color:#a6e22e">@tenshiserver</span>:~<span style="color:#960050;background-color:#1e0010">#</span> sudo -i -u postgres
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 进入postgres终端，此时就在postgres这个数据库里了</span>
-</span></span><span style="display:flex;"><span>postgres@tenshiserver:~# psql
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">#</span> 进入postgres终端<span style="color:#960050;background-color:#1e0010">，</span>此时就在postgres这个数据库里了
+</span></span><span style="display:flex;"><span>postgres<span style="color:#a6e22e">@tenshiserver</span>:~<span style="color:#960050;background-color:#1e0010">#</span> psql
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 设置账户密码，回车之后自行输入即可</span>
-</span></span><span style="display:flex;"><span>postgres<span style="color:#f92672">=</span><span style="color:#75715e"># \password</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">#</span> 设置账户密码<span style="color:#960050;background-color:#1e0010">，</span>回车之后自行输入即可
+</span></span><span style="display:flex;"><span>postgres=<span style="color:#960050;background-color:#1e0010">#</span> <span style="color:#960050;background-color:#1e0010">\</span>password
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 创建名为fuckbase的数据库（可选）</span>
-</span></span><span style="display:flex;"><span>postgres<span style="color:#f92672">=</span><span style="color:#75715e"># CREATE DATABASE fuckbase;</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">#</span> 创建名为fuckbase的数据库<span style="color:#960050;background-color:#1e0010">（</span>可选<span style="color:#960050;background-color:#1e0010">）</span>
+</span></span><span style="display:flex;"><span>postgres=<span style="color:#960050;background-color:#1e0010">#</span> CREATE DATABASE fuckbase;
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 切换至fuckbase（可选）</span>
-</span></span><span style="display:flex;"><span>postgres<span style="color:#f92672">=</span><span style="color:#75715e"># \c fuckbase;</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">#</span> 切换至fuckbase<span style="color:#960050;background-color:#1e0010">（</span>可选<span style="color:#960050;background-color:#1e0010">）</span>
+</span></span><span style="display:flex;"><span>postgres=<span style="color:#960050;background-color:#1e0010">#</span> <span style="color:#960050;background-color:#1e0010">\</span>c fuckbase;
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 离开数据库终端</span>
-</span></span><span style="display:flex;"><span>fuckbase<span style="color:#f92672">=</span><span style="color:#75715e"># \q</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">#</span> 离开数据库终端
+</span></span><span style="display:flex;"><span>fuckbase=<span style="color:#960050;background-color:#1e0010">#</span> <span style="color:#960050;background-color:#1e0010">\</span>q
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 返回至原先的用户</span>
-</span></span><span style="display:flex;"><span>postgres@tenshiserver:~# logout
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">#</span> 返回至原先的用户
+</span></span><span style="display:flex;"><span>postgres<span style="color:#a6e22e">@tenshiserver</span>:~<span style="color:#960050;background-color:#1e0010">#</span> logout
 </span></span></code></pre></div><h2 id="启动服务器">启动服务器</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># 设置自启动</span>
 </span></span><span style="display:flex;"><span>root@tenshiserver:~# systemctl enable postgresql
@@ -379,7 +379,7 @@
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># 配置pg_hba.conf</span>
 </span></span><span style="display:flex;"><span>root@tenshiserver:/etc/postgresql/16/main# vim pg_hba.conf
 </span></span></code></pre></div><p>在最后插入一行，内容如下，无需加入注释那行</p>
-<pre tabindex="0"><code class="language-conf" data-lang="conf">#类型   可访问数据库   可访问数据库用户      授权IP                方法
+<pre tabindex="0"><code class="language-conf" data-lang="conf"># 类型 可访问数据库   可访问数据库用户      授权IP                 方法
 host    all             all             0.0.0.0/0               md5
 </code></pre><p>重启一下服务器服务，就配置好了</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>root@tenshiserver:/etc/postgresql/16/main# systemctl restart postgresql
