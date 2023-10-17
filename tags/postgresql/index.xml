@@ -28,30 +28,30 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;root@tenshiserver:~# apt -y install postgresql
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;用户配置&#34;&gt;用户配置&lt;/h2&gt;
 &lt;p&gt;名为&amp;quot;postgres&amp;quot;的数据库以及系统用户会自动创建&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;# 给postgres设置密码
-root@tenshiserver:~# passwd postgres
-
-# 进入postgres系统用户
-root@tenshiserver:~# sudo -i -u postgres
-
-# 进入postgres终端，此时就在postgres这个数据库里了
-postgres@tenshiserver:~# psql
-
-# 设置账户密码，回车之后自行输入即可
-postgres=# \password
-
-# 创建名为fuckbase的数据库（可选）
-postgres=# CREATE DATABASE fuckbase;
-
-# 切换至fuckbase（可选）
-postgres=# \c fuckbase;
-
-# 离开数据库终端
-fuckbase=# \q
-
-# 返回至原先的用户
-postgres@tenshiserver:~# logout
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;启动服务器&#34;&gt;启动服务器&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;# 给postgres设置密码
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;root@tenshiserver:~# passwd postgres
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;# 进入postgres系统用户
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;root@tenshiserver:~# sudo -i -u postgres
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;# 进入postgres终端，此时就在postgres这个数据库里了
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;postgres@tenshiserver:~# psql
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;# 设置账户密码，回车之后自行输入即可
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;postgres=# \password
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;# 创建名为fuckbase的数据库（可选）
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;postgres=# CREATE DATABASE fuckbase;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;# 切换至fuckbase（可选）
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;postgres=# \c fuckbase;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;# 离开数据库终端
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;fuckbase=# \q
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;# 返回至原先的用户
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;postgres@tenshiserver:~# logout
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;启动服务器&#34;&gt;启动服务器&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 设置自启动&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;root@tenshiserver:~# systemctl enable postgresql
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
@@ -79,6 +79,61 @@ host    all             all             0.0.0.0/0               md5
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
 &lt;p&gt;Postgresql默认使用端口为5432，请留意端口放行状态&lt;/p&gt;
 &lt;/blockquote&gt;
+</description>
+        </item>
+        <item>
+        <title>PostgreSQL学习笔记-2</title>
+        <link>https://ltyec.com/post/postgre-2/</link>
+        <pubDate>Tue, 17 Oct 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://ltyec.com/post/postgre-2/</guid>
+        <description>&lt;img src="https://ltyec.com/post/postgre-2/woyouyyz.jpg" alt="Featured image of post PostgreSQL学习笔记-2" /&gt;&lt;h2 id=&#34;创建表格&#34;&gt;创建表格&lt;/h2&gt;
+&lt;p&gt;由于模式部分还没有学习到位，暂不讲述&lt;/p&gt;
+&lt;p&gt;postgresql中有许多数据类型，与日常中的数据类型有部分的区别&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;int2&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# smallint，占用2字节，-32768 ~ 32767&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;int4&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# integer，占用4字节，-2147483648 ~ 2147483647&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;int8&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# bigint，占用8字节，-9223372036854775808 ~ 9223372036854775807&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;float4&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# 单精度浮点，占用4字节&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;float8&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# 双精度浮点，占用8字节&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;bool&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# 布尔值，t/f&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;varchar(长度)&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# 可以限制最长长度的字符串&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;char(长度)&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# 定长字符串，长度不足则向后填充空白字符&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;text&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# 不限长度&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;更多的详细描述请前往&lt;a class=&#34;link&#34; href=&#34;https://zhuanlan.zhihu.com/p/105097036&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;知乎文章&lt;/a&gt;查看&lt;/p&gt;
+&lt;p&gt;接下来，我们在postgres终端中创建一个表格：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;CREATE&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;TABLE&lt;/span&gt; userinfo (
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; id integer &lt;span style=&#34;color:#66d9ef&#34;&gt;not&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;null&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; username varchar (&lt;span style=&#34;color:#ae81ff&#34;&gt;16&lt;/span&gt;) &lt;span style=&#34;color:#66d9ef&#34;&gt;not&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;null&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; password varchar (&lt;span style=&#34;color:#ae81ff&#34;&gt;16&lt;/span&gt;) &lt;span style=&#34;color:#66d9ef&#34;&gt;not&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;null&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; create_time &lt;span style=&#34;color:#66d9ef&#34;&gt;timestamp&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;not&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;null&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;default&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;current_timestamp&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; update_time &lt;span style=&#34;color:#66d9ef&#34;&gt;timestamp&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;not&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;null&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;default&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;current_timestamp&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; permission char (&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;) &lt;span style=&#34;color:#66d9ef&#34;&gt;not&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;null&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;default&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;0&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;可以发现 创建表格字段时，大致是由&lt;code&gt;字段名&lt;/code&gt;，&lt;code&gt;数据类型&lt;/code&gt;，&lt;code&gt;不是null（可选）&lt;/code&gt;，&lt;code&gt;默认数据（可选）&lt;/code&gt;等部分构成的&lt;/p&gt;
+&lt;p&gt;这个时候 我们就建好表格啦&lt;/p&gt;
+&lt;h2 id=&#34;增删改查&#34;&gt;增删改查&lt;/h2&gt;
+&lt;p&gt;从朋友kiwi那里获得了总结，数据库大致重要的四个操作，&lt;code&gt;增删改查&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;增&#34;&gt;增&lt;/h3&gt;
+&lt;p&gt;增，即增加数据，&lt;code&gt;INSERT&lt;/code&gt;，请看示例&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;INSERT&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;INTO&lt;/span&gt; userinfo (id, username, password) &lt;span style=&#34;color:#66d9ef&#34;&gt;VALUES&lt;/span&gt; (&lt;span style=&#34;color:#ae81ff&#34;&gt;114514&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;yajusenpai&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;1145141919810&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;首先指定表名，然后字段与数据一一对应，即可增加数据&lt;/p&gt;
+&lt;h3 id=&#34;删&#34;&gt;删&lt;/h3&gt;
+&lt;p&gt;删，即删除数据，&lt;code&gt;INSERT&lt;/code&gt;，请看示例&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;DELETE&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;FROM&lt;/span&gt; userinfo &lt;span style=&#34;color:#66d9ef&#34;&gt;WHERE&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;id&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;114514&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;删除符合条件的一条数据&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;WHERE&lt;/code&gt;语句后紧接条件，目的是对所有符合条件的数据作出操作&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;改&#34;&gt;改&lt;/h3&gt;
+&lt;p&gt;改，即更改数据，&lt;code&gt;UPDATE&lt;/code&gt;，请看示例&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;UPDATE&lt;/span&gt; userinfo &lt;span style=&#34;color:#66d9ef&#34;&gt;SET&lt;/span&gt; password &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;1145141919&amp;#34;&lt;/span&gt;, username &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;YJSNPI&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;WHERE&lt;/span&gt; id &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;114514&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;更改符合条件的数据&lt;/p&gt;
+&lt;h3 id=&#34;查&#34;&gt;查&lt;/h3&gt;
+&lt;p&gt;查，即查询数据，&lt;code&gt;SELECT&lt;/code&gt;，请看示例&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;SELECT&lt;/span&gt; username &lt;span style=&#34;color:#66d9ef&#34;&gt;FROM&lt;/span&gt; userinfo;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;查询userinfo中所有的username&lt;/p&gt;
+&lt;p&gt;往后会增加更多细节，现在只学了三脚猫功夫，就不献丑了。。&lt;/p&gt;
 </description>
         </item>
         
